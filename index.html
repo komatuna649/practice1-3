@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <title>javascript</title>
-    <meta name="description" content="site">
-<!-- <link rel="stylesheet" href="css/style.css"> -->
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>javascript</title>
+     <meta name="description" content="site">
+     <!-- <link rel="stylesheet" href="css/style.css"> -->
 
 </head>
-課題１－3
-ご確認よろしくお願いします。
 
+<body>
+     課題１－3
+     ご確認よろしくお願いします。
+     <script>
+          'use strict';
 
+          const array = ['掃除', '買い物', '散歩'];
 
+          array.forEach((index, value) =>
+               console.log(index + ":" + value)
+          );
 
-<script>
-'use strict';
+          const task = prompt("タスクを入力してください");
+          array.push(task);
+          array.forEach((index, value) =>
+               console.log(index + ":" + value)
+          );
 
-const array = [ '掃除', '買い物', '散歩' ];
- 
-array.forEach(function( value ) {
-     console.log( value );
-});
+          alert("新しいタスクを追加しました。");
 
-const task = prompt("タスクを入力してください");
-array.push(task);
-array.forEach(function( value ) {
-     console.log( value );
-});
+          window.prompt("確認、追加、削除、終了のいずれかを選択してください。");
 
-alert("新しいタスクを追加しました。");
+     </script>
 
-
-let next = prompt("確認、追加、削除、終了のいずれかを選択してください。");
-
-
-
-
-    
-
-</script>
-
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
-<!-- <script src="js/main.js"></script> -->
+     <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+     <!-- <script src="js/main.js"></script> -->
 
 </body>
+
 </html>
